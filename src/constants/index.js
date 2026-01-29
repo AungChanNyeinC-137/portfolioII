@@ -104,7 +104,6 @@ const blogPosts = [
   },
 ];
 
-
 const techStack = [
   {
     category: "Frontend",
@@ -138,7 +137,7 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/AungChanNyeinC-137",
   },
   {
     id: 2,
@@ -433,10 +432,10 @@ const ABOUT_LOCATION = {
       subtitle: "Meet the Developer Behind the Code",
       image: "/images/aungchan.jpg",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "Hey, I’m Aung Chan 👋 — a web developer who loves turning ideas into clean, interactive websites that feel good to use.",
+        "I mostly work with JavaScript, React, and Next.js, and I’m obsessed with smooth animations, fast performance, and thoughtful details.",
+        "Clean UI, solid UX, and readable code are my thing — if it needs a detective to debug, I’m not done yet.",
+        "When I’m not coding, I’m probably refining layouts way too late at night, sipping tea instead of coffee, or convincing myself that this new gadget is definitely a necessity 😅",
       ],
     },
   ],

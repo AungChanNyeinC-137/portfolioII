@@ -5,4 +5,5 @@ import Resume from "./Resume";
 import Finder from "./Finder";
 import Text from "./Text";
 import ImageViewer from "./ImageViewer";
-export {Terminal, Photos, Safari, Resume,Finder, Text, ImageViewer};
+import Contact from "./Contact";
+export {Terminal, Photos, Safari, Resume,Finder, Text, ImageViewer, Contact};
