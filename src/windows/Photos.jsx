@@ -9,7 +9,7 @@ const Photos = () => {
       
     </div>
     <div>
-      <img src="/public/images/couple.jpg" alt="couple" />
+      <img src="/images/couple.jpg" alt="couple" />
     </div>
     </>
 }
