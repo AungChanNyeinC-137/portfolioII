@@ -77,27 +77,33 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    date: "March 2023 – May 2024",
+    title: "Marketing Admin",
+    description:
+      "Handled digital campaigns, analytics, and internal tooling support. Collaborated closely with designers and developers.",
+    image: "/images/logo1.png",
+    link: "#",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    date: "August 2023 – December 2024",
+    title: ".NET Developer",
+    description:
+      "Worked on backend services, APIs, and internal systems using .NET technologies.",
+    image: "/images/logo2.png",
+    link: "#",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    date: "December 2023 – Present",
+    title: "Professional Web Developer",
+    description:
+      "Building modern web applications using React, Tailwind, animations, and clean UI architecture.",
+    image: "/images/logo3.png",
+    link: "#",
   },
 ];
+
 
 const techStack = [
   {
