@@ -1,3 +1,4 @@
 import Terminal from "./Terminal";
-import PhotosWindow from "./Photos";
-export {Terminal, PhotosWindow};
+import Photos from "./Photos";
+import Safari from "./Safari";
+export {Terminal, Photos, Safari};
