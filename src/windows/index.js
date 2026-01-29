@@ -3,4 +3,6 @@ import Photos from "./Photos";
 import Safari from "./Safari";
 import Resume from "./Resume";
 import Finder from "./Finder";
-export {Terminal, Photos, Safari, Resume,Finder};
+import Text from "./Text";
+import ImageViewer from "./ImageViewer";
+export {Terminal, Photos, Safari, Resume,Finder, Text, ImageViewer};
