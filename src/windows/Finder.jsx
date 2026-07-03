@@ -5,11 +5,13 @@ import useLocationStore from "#store/location";
 import useWindowStore from "#store/window";
 import { clsx } from "clsx";
 import { Search } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Finder = () => {
   const { openWindow } = useWindowStore();
-  const { activeLocation, setActiveLocation } = useLocationStore();
+  const { finderActiveLocation, setFinderActiveLocation } = useLocationStore(); useEffect(() => {
+    setFinderActiveLocation(locations.work);
+  }, []);
   const renderList = (name, items) => (
     <div>
       <h3>{name}</h3>
@@ -17,9 +19,9 @@ const Finder = () => {
         {items.map((item) => (
           <li
             key={item.id}
-            onClick={() => setActiveLocation(item)}
+            onClick={() => setFinderActiveLocation(item)}
             className={clsx(
-              item.id === activeLocation.id ? "active" : "not-active",
+              item.id === finderActiveLocation?.id ? "active" : "not-active"
             )}
           >
             <img src={item.icon} alt={item.name} className="w-4" />
@@ -32,10 +34,10 @@ const Finder = () => {
 
   const openItem = (item) => {
     if (item.fileType === "pdf") return openWindow("resume");
-    if(item.kind === 'folder') return setActiveLocation(item);
-    if(['fig','url'].includes(item.fileType) && item.href)
-      return  window.open(item.href,'_blank');
-    openWindow(`${item.fileType}${item.kind}`,item)
+    if (item.kind === 'folder') return setFinderActiveLocation(item);
+    if (['fig', 'url'].includes(item.fileType) && item.href)
+      return window.open(item.href, '_blank');
+    openWindow(`${item.fileType}${item.kind}`, item)
   };
 
   return (
@@ -51,7 +53,7 @@ const Finder = () => {
           <ul>{renderList("Work", locations.work.children)}</ul>
         </div>
         <ul className="content">
-          {activeLocation?.children.map((item) => (
+          {finderActiveLocation?.children.map((item) => (
             <li
               key={item.id}
               className={item.position}

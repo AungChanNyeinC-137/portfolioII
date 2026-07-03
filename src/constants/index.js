@@ -162,52 +162,7 @@ const socials = [
   },
 ];
 
-const photosLinks = [
-  {
-    id: 1,
-    icon: "/icons/gicon1.svg",
-    title: "Library",
-  },
-  {
-    id: 2,
-    icon: "/icons/gicon2.svg",
-    title: "Memories",
-  },
-  {
-    id: 3,
-    icon: "/icons/file.svg",
-    title: "Places",
-  },
-  {
-    id: 4,
-    icon: "/icons/gicon4.svg",
-    title: "People",
-  },
-  {
-    id: 5,
-    icon: "/icons/gicon5.svg",
-    title: "Favorites",
-  },
-];
 
-const gallery = [
-  {
-    id: 1,
-    img: "/images/gal1.png",
-  },
-  {
-    id: 2,
-    img: "/images/gal2.png",
-  },
-  {
-    id: 3,
-    img: "/images/gal3.png",
-  },
-  {
-    id: 4,
-    img: "/images/gal4.png",
-  },
-];
 
 export {
   navLinks,
@@ -216,8 +171,6 @@ export {
   blogPosts,
   techStack,
   socials,
-  photosLinks,
-  gallery,
 };
 
 const WORK_LOCATION = {
@@ -493,6 +446,194 @@ export const locations = {
   resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
+export const PHOTOS_LOCATION = {
+  id: 5,
+  type: "photos",
+  name: "Photos",
+  icon: "/icons/photos.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "Library",
+      icon: "/icons/gicon1.svg",
+      kind: "folder",
+      children: [
+        {
+          id: 1,
+          name: "conference-me",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/gal-1.jpg",
+        },
+        {
+          id: 2,
+          name: "mirror-selfie",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/gal-2.jpg",
+        },
+        {
+          id: 3,
+          name: "busy-me",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/gal-3.jpg",
+        },
+       
+      ],
+    },
+
+    {
+      id: 2,
+      name: "Memories",
+      icon: "/icons/gicon2.svg",
+      kind: "folder",
+      children: [
+        {
+          id: 1,
+          name: "concert-me",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/memory-1.png",
+        },
+       
+      ],
+    },
+
+    {
+      id: 3,
+      name: "Places",
+      icon: "/icons/file.svg",
+      kind: "folder",
+      children: [
+        {
+          id: 1,
+          name: "chaung thar",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/places-1.jpg",
+        },
+     
+      ],
+    },
+
+    {
+      id: 4,
+      name: "People",
+      icon: "/icons/gicon4.svg",
+      kind: "folder",
+      children: [
+        {
+          id: 1,
+          name: "us the developers",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/people-1.jpg",
+        },
+        
+      ],
+    },
+
+    {
+      id: 5,
+      name: "Favorites",
+      icon: "/icons/gicon5.svg",
+      kind: "folder",
+      children: [
+        {
+          id: 1,
+          name: "favorite",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/favorite-1.jpg",
+        },
+        {
+          id: 2,
+          name: "favorite",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          imageUrl: "/images/favorite-2.jpg",
+        },
+      ],
+    },
+
+    // {
+    //   id: 6,
+    //   name: "Achievements",
+    //   icon: "/icons/gicon6.svg",
+    //   kind: "folder",
+    //   children: [
+    //     {
+    //       id: 1,
+    //       name: "Certicicate of Foundational Principles for Teaching ESL.pdf",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-1.pdf",
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "Certificate of Lesson Design and Assessment",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-2.pdf",
+    //     },
+    //     {
+    //       id: 3,
+    //       name: "Certificate of Technology Enriched Teaching",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-3.pdf",
+    //     },
+    //     {
+    //       id: 4,
+    //       name: "Certificate of TESOL Capstone Project 1",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-4.pdf",
+    //     },
+    //     {
+    //       id:5,
+    //       name: "Certificate of Theories of Second Language Acquisition",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-5.pdf",
+    //     },
+    //     {
+    //       id: 6,
+    //       name: "Certificate_of_Teaching_Second_Language_Listening,_Speaking_and_Pronunciation",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-6.pdf",
+    //     },
+    //     {
+    //       id: 7,
+    //       name: "Certificate_of_Teaching_Second_Language_Reading,_Writing_and_Grammar",
+    //       icon: "/images/pdf.png",
+    //       kind: "file",
+    //       fileType: "pdf",
+    //       pdfUrl: "/files/certificate-7.pdf",
+    //     },
+    //   ],
+    // },
+  ],
+};
+
+export const photosLinks = PHOTOS_LOCATION.children;
 
 const INITIAL_Z_INDEX = 1000;
 

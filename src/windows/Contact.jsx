@@ -24,6 +24,7 @@ const Contact = () => {
           up.
         </p>
         <p>aungchan.dev@gmail.com</p>
+        <p>+95 9 788 894 358</p>
         <ul>
           {socials.map(({ id, bg, link, icon, text }) => 
             (<li key={id} style={{backgroundColor:bg}}>
