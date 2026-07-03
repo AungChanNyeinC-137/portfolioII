@@ -101,21 +101,49 @@ body {
   #window-controls {
     @apply flex gap-2;
 
+    button {
+      @apply size-3.5 rounded-full cursor-pointer relative flex-center border-0 p-0;
+
+      &::before {
+        @apply opacity-0 text-[10px] leading-none font-bold text-black/55 transition-opacity;
+      }
+
+      &:hover::before {
+        @apply opacity-100;
+      }
+
+      &:disabled {
+        @apply cursor-default;
+      }
+    }
+
     .close {
-      @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+      @apply bg-[#ff6157];
+
+      &::before {
+        content: "x";
+      }
     }
 
     .minimize {
-      @apply size-3.5 rounded-full bg-[#ffc030];
+      @apply bg-[#ffc030];
+
+      &::before {
+        content: "-";
+      }
     }
 
     .maximize {
-      @apply size-3.5 rounded-full bg-[#2acb42];
+      @apply bg-[#2acb42];
+
+      &::before {
+        content: "+";
+      }
     }
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400 cursor-default;
   }
 
   #safari {

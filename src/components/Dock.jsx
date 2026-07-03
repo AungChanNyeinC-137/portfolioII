@@ -7,7 +7,7 @@ import useWindowStore from "#store/window";
 
 const Dock = () => {
 
-  const {openWindow,closeWindow,focusWindow, windows} = useWindowStore();
+  const {openWindow,restoreWindow,focusWindow, windows} = useWindowStore();
 
   const dockRef = useRef(null);
 
@@ -61,12 +61,13 @@ const Dock = () => {
       console.error(`window not found for the app: ${app.id}`);
       return;
     }
-    if(window.isOpen) {
-      closeWindow(app.id);
+    if(window.isMinimized) {
+      restoreWindow(app.id);
+    } else if(window.isOpen) {
+      focusWindow(app.id);
     } else {
       openWindow(app.id);
     }
-    console.log(windows);
   };
   return (
     <section id="dock">

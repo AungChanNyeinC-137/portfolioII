@@ -1,11 +1,9 @@
 import { WindowConrtols } from "#components";
 import { socials } from "#constants";
 import WindowWrapper from "#hoc/WindowWrapper";
-import useWindowStore from "#store/window";
 import React from "react";
 
 const Contact = () => {
-  const { windows } = useWindowStore();
   return (
     <>
       <div id="window-header">
