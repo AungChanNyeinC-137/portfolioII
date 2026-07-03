@@ -181,57 +181,48 @@ const WORK_LOCATION = {
   kind: "folder",
   children: [
     // ▶ Project 1
+{
+  id: 5,
+  name: "Massage Booking System",
+  icon: "/images/folder.png",
+  kind: "folder",
+  position: "top-10 left-5",
+  windowPosition: "top-[5vh] left-5",
+  children: [
     {
-      id: 5,
-      name: "Nike Ecommerce Website Application",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[5vh] left-5", // optional: Finder window position
-      children: [
-        {
-          id: 1,
-          name: "Nike Project.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
-          ],
-        },
-        {
-          id: 2,
-          name: "nike.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
-          position: "top-10 right-20",
-        },
-        {
-          id: 4,
-          name: "nike.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
-        },
+      id: 1,
+      name: "Booking System.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-5 left-10",
+      description: [
+        "A complete massage booking platform built for a real client, allowing customers to book appointments in just a few simple steps.",
+        "The system includes an elegant landing page, a Tinder-style therapist selection experience, real-time therapist availability, secure payment verification, and an admin dashboard.",
+        "Administrators can manage bookings, therapists, services, payments, promotions, and business analytics from a modern interface.",
+        "Built with Next.js, TypeScript, Tailwind CSS, shadcn/ui, Supabase, and GSAP, focusing on performance, scalability, and an exceptional user experience.",
       ],
     },
+    {
+      id: 2,
+      name: "Live Demo",
+      icon: "/images/safari.png",
+      kind: "file",
+      fileType: "url",
+      href: "https://delight-relaxation.vercel.app/",
+      position: "top-10 right-20",
+    },
+    {
+      id: 3,
+      name: "booking-system.jpg",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-52 right-80",
+      imageUrl: "/images/booking-system.jpg",
+    },
+  ],
+},
 
     // ▶ Project 2
     {
