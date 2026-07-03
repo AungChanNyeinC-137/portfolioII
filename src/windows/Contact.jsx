@@ -23,7 +23,7 @@ const Contact = () => {
           Building something? Stuck on a bug? Or just want to chat tech? Hit me
           up.
         </p>
-        <p>aungchannyein29699@gmail.com</p>
+        <p>aungchan.dev@gmail.com</p>
         <ul>
           {socials.map(({ id, bg, link, icon, text }) => 
             (<li key={id} style={{backgroundColor:bg}}>

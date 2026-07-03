@@ -141,17 +141,17 @@ const socials = [
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
+    text: "Telegram",
+    icon: "/icons/telegram.svg",
     bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    link: "https://t.me/Reichenbath",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
+    text: "Facebook",
+    icon: "/icons/facebook.svg",
     bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    link: "https://www.facebook.com/share/1CNcwp3HAh/",
   },
   {
     id: 4,
