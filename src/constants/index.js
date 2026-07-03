@@ -132,13 +132,13 @@ const techStack = [
 ];
 
 const socials = [
-  {
-    id: 1,
-    text: "Github",
-    icon: "/icons/github.svg",
-    bg: "#f4656b",
-    link: "https://github.com/AungChanNyeinC-137",
-  },
+  // {
+  //   id: 1,
+  //   text: "Github",
+  //   icon: "/icons/github.svg",
+  //   bg: "#f4656b",
+  //   link: "https://github.com/AungChanNyeinC-137",
+  // },
   {
     id: 2,
     text: "Telegram",
